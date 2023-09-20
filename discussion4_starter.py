@@ -18,7 +18,7 @@ class Rectangle():
 
     # YOUR CODE HERE
     def __str__(self):
-        print("A rectangle with width " + str(self.width) + "and height " + self.height)
+        return("A rectangle with width " + str(self.width) + "and height " + str(self.height))
 
 
 
@@ -42,7 +42,7 @@ class Rectangle():
     # YOUR CODE HERE
     def area(self):
         if self.verify_input():
-            return self.width*self.height
+            return str(self.width*self.height)
 
 
 
@@ -52,7 +52,9 @@ class Rectangle():
     # Otherwise, it returns the perimeter of the rectangle.
 
     # YOUR CODE HERE
-    
+    def perimeter(self):
+        if self.verify_input():
+            return str(self.width*2+self.height*2)
 
 
 def main():
